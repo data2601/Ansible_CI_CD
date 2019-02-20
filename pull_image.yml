@@ -1,0 +1,8 @@
+---
+- name: Docker Image Pull From DockerHub
+  hosts: local
+  connection: Localhost
+  tasks:
+    - name: pull an image
+      docker_image:
+        name: pacur/centos-7
